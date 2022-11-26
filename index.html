@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -27,7 +28,9 @@
           <nav class="navigation">
             <ul class="navigation-list list">
               <li class="navigation-list__item">
-                <a class="navigation-list__link current" href="./index.html"
+                <a
+                  class="navigation-list__link navigation-list__link--current"
+                  href="./index.html"
                   >Студія</a
                 >
               </li>
@@ -65,7 +68,7 @@
     </header>
 
     <main>
-      <section class="hero overlay">
+      <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open class="hero__button" type="button">
           Замовити послугу
@@ -75,27 +78,27 @@
       <section class="features section">
         <div class="container">
           <ul class="features__list list">
-            <li class="features__item features__icon-antenna">
+            <li class="features__item features__item--icon-antenna">
               <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="features__item features__icon-clock">
+            <li class="features__item features__item--icon-clock">
               <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="features__item features__icon-diagram">
+            <li class="features__item features__item--icon-diagram">
               <h3 class="features__title">ПЛАНУВАННЯ</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="features__item features__icon-astronaut">
+            <li class="features__item features__item--icon-astronaut">
               <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація

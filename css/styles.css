@@ -191,7 +191,10 @@ img {
   color: var(--accent-color);
 }
 
-.navigation-list__link.current {
+/* .navigation-list__link.current {
+  color: var(--accent-color);
+} */
+.navigation-list__link.navigation-list__link--current {
   color: var(--accent-color);
 }
 
@@ -205,7 +208,8 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
 } */
-.navigation-list__link.current::after {
+
+.navigation-list__link.navigation-list__link--current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -299,21 +303,16 @@ img {
 
 /* Hero */
 .hero {
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 280px;
-  padding-left: 452px;
-  padding-right: 452px;
-
-  /* background: var(--primary-bg-color); */
-}
-
-.overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px;
   text-align: center;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -324,6 +323,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.overlay {
 }
 
 /* .hero-title {
@@ -461,6 +463,31 @@ img {
   margin-bottom: 30px;
 }
 
+.features__item--icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+/* .icon-clock::before {
+  background-image: url(../images/clock.svg);
+} */
+.features__item--icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+/* .icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+} */
+.features__item--icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+/* .icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+} */
+.features__item--icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 /* .features-title .features-header {
   font-weight: 700;
   font-size: 14px;
@@ -485,30 +512,6 @@ img {
 /* .icon-antenna::before {
   background-image: url(../images/antenna.svg);
 } */
-.features__icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-/* .icon-clock::before {
-  background-image: url(../images/clock.svg);
-} */
-.features__icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-/* .icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-} */
-.features__icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-/* .icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-} */
-.features__icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
 
 .about {
   margin-left: auto;
