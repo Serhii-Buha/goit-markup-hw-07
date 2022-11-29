@@ -1309,6 +1309,10 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 } */
+
+.cards {
+}
+
 .flex-list {
   display: flex;
   flex-wrap: wrap;
